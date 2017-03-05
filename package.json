@@ -2,6 +2,10 @@
   "name": "pb-js",
   "version": "1.0.0",
   "description": "",
+  "author": [
+  	"Maciej Sawicki",
+  	"Krzysztof Sienkiewicz"
+  ],
   "main": "myBackbone.js",
   "dependencies": {
     "body-parser": "^1.17.0",
