@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ 	<meta charset="utf-8">
+ 	<title>Database</title>
+ 	<script src="underscore-min.js"></script>
+ 	<script src="jquery-2.1.4.min.js"></script>
+ 	<script src="jquery-ui.js"></script>
+ 	<script src="backbone-min.js"></script>
+ 	<script src="chosen.jquery.js"></script>
+ 	<script src="chosen.proto.js"></script>
+ 	<script src="myBackbone.js"></script>
+ 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+ 	<link rel="stylesheet" type="text/css" href="mainPage.css">
+ 	<link rel="stylesheet" type="text/css" href="chosen.css">
+</head>
+<body>
+	<div id="header"><h1>Database</h1></div>
+ 	<div id="players" class="table">
+ 		<h3 class="tableHeader">Players</h2>
+ 		<ul id="playersList" class="tableList">
+ 			<!-- <li value="1">Adam Nawałka</li>
+ 			<li value="2">Albert Einstein</li> -->
+ 		</ul>
+ 	</div>
+ 	<div id="teams" class="table">
+ 		<h3 class="tableHeader">Teams</h2>
+ 		<ul id="teamsList" class="tableList">
+
+ 		</ul>
+ 	</div>
+ 	<button id="addNewPlayer">Add new player</button>
+ 	<div id="addPlayers" class="add" title="Add new player">
+ 		<p class="addPlayersHead">Fill out the player form.</p>
+ 		<p class="validateTips"></p>
+ 		<form>
+ 			<fieldset>
+ 				<label for="names" >Names (divided with ",")</label>
+ 				<input type="text" name="names" id="names" class="text ui-widget-content ui-corner-all">
+ 				<label for="surnames">Surnames (divided with ",")</label>
+ 				<input type="text" name="surnames" id="surnames" class="text ui-widget-content ui-corner-all">
+ 				<label for="nationality">Nationality</label>
+ 				<input type="text" name="nationality" id="nationality" class="text ui-widget-content ui-corner-all">
+ 				<label for="birthday">Birthday</label>
+ 				<input type="text" name="birthday" id="birthday" class="text ui-widget-content ui-corner-all" readonly='true'>
+ 				<label for="currentTeam">Current team</label>
+ 				<select name="currentTeam" id="currentTeam" style="margin-bottom: 10px">
+ 					<!-- options -->
+ 					<option value="1">dupa</option>
+ 				</select>
+ 				<label for="previousTeams">Previous teams</label>
+				<select multiple="multiple" name="previousTeams" id="previousTeams">
+					<!-- options -->
+					<option value="1">dupa</option>
+					<option value="2">dupa2</option>
+				</select>
+ 				<input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+
+ 			</fieldset>
+ 		</form>
+ 	</div>
+ 	
+
+ 	<button id="addNewTeam">Add new team</button>
+ 	<div id="addTeams" class="add" title="Add new team">
+ 		<p class="addTeamsHead">Fill out the team form.</p>
+ 		<p class="validateTips"></p>
+ 		<form>
+ 			<fieldset>
+ 			<label for="name">Team name</label>
+ 			<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all"> 
+
+ 			</fieldset>
+ 		</form>
+ 	</div>
+
+ 	<br>
+ 	
+ 	<div id="playerOverview" title="Player stats">
+ 		<button id="previousPlayer">&lt</button>
+ 		<button id="nextPlayer">&gt</button>
+ 		<p>Player information.</p>
+ 		<br>
+ 		<table>
+ 			<tr class = "names">
+ 				<th style="width: 80px">Names</th>
+ 				<td style="width: 100%">lolol</td>
+ 			</tr>
+ 			<tr class = "surnames">
+ 				<th>Surnames</th>
+ 				<td>lolol</td>
+ 			</tr>
+ 			<tr class = "nationality">
+ 				<th>Nationality</th>
+ 				<td>lolol</td>
+ 			</tr>
+ 			<tr class = "birthday">
+ 				<th>Birthday</th>
+ 				<td>lolol</td>
+ 			</tr>
+ 			<tr class = "currentTeam">
+ 				<th>Current Team</th>
+ 				<td>lolol</td>
+ 			</tr>
+ 			<tr class = "previousTeams">
+ 				<th>Previous Teams</th>
+ 				<td>lolol</td>
+ 			</tr>
+ 		</table>
+ 	</div>
+
+ 	<div id="teamOverview" title="Team stats">
+ 		<button id="previousTeam">&lt</button>
+ 		<button id="nextTeam">&gt</button>
+ 		<p>Team information.</p>
+ 		<br>
+ 		<table>
+ 			<tr class = "name">
+ 				<th style="width:80px">Name</th>
+ 				<td style="width:100%">Nazwa zespolu</td>
+ 			</tr>
+ 			<tr class = "currentPlayers">
+ 				<th>Current Players</th>
+ 				<td>playersnames</td>
+ 			</tr>
+ 			<tr class = "previousPlayers">
+ 				<th>Previous Players</th>
+ 				<td>players names</td>
+ 			</tr>
+ 		</table>
+ 	</div>
+
+</body>
+</html>

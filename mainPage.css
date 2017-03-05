@@ -1,0 +1,120 @@
+body {
+	/*background: linear-gradient(#c1c1cc, white);*/
+	background-color: lightgrey;
+	text-align: left;
+	margin: 0 auto;
+	width: 700px;
+}
+#header {
+	text-align: center;
+}
+#players {
+	float:left;
+	width: 42%;
+	background:#9c9;
+	text-align: center;
+	margin-left: 3%;
+}
+#teams {
+	float: right;
+	width: 42%;
+	background:#c9c;
+	text-align: center;
+	margin-right: 3%;
+}
+.table {
+	border-radius: 10px;
+
+}
+.tableList {
+	text-align: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left: 0px;
+	list-style-type: none;
+	height: 300px;
+	overflow-y: scroll;
+}
+
+.tableHeader {
+	margin:20px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 45px;
+	border-bottom: 1px solid black;
+}
+/*#addPlayers {
+	visibility: visible;
+	clear: left;
+	float: left;
+	margin-left: 3%;
+}*/
+/*#addTeams {
+	visibility: visible;
+	clear: right;
+	float: right;
+	margin-right: 3%;
+}*/
+
+#addNewPlayer {
+	margin-left: 3%;
+	margin-top: 10px;
+}
+#addNewTeam {
+	margin-left: 35%;
+	margin-top: 10px;
+}
+label, input{ 
+	display:block; 
+}
+input.text { 
+	margin-bottom:12px; 
+	width:95%;
+	padding: .4em; 
+}
+fieldset { 
+	padding:0; 
+	border:0; 
+	margin-top:25px; 
+}
+.add label {
+	margin-bottom: 2px;
+}
+.add label[for="previousTeams"] {
+	margin-top: 13px;
+}
+.ui-widget {
+    /*font-family: Arial,Verdana,sans-serif;*/
+    font-size: 0.7em;
+}
+.chosen-container .chosen-results {
+    max-height:200px !important;
+}
+.ui-dialog{
+	overflow: initial !important;
+}
+#addPlayers {
+	overflow: visible;
+}
+#nextPlayer, #nextTeam {
+	float: right;
+}
+#previousPlayer, #previousTeam {
+	float: left;
+}
+#playerOverview p, #teamOverview p {
+	margin: auto;
+	text-align: center;
+	margin-top: 5px;
+}
+#playerOverview table, #teamOverview table {
+	float: left;
+} 
+#playerOverview table tr, #teamOverview table tr {
+/*	background-color: red;*/
+}
+#playerOverview table td, #teamOverview table td {
+	padding: 10px 10px;
+}
